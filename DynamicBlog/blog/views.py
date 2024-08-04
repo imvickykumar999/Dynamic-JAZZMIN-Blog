@@ -27,11 +27,6 @@ def contact(request):
         success_message = "Your message has been sent. Thank you!"
     return render(request, 'contact.html', {'success_message': success_message})
 
-def blogs(request):
-    articles = Article.objects.all()
-    categories = BlogCategory.objects.all()
-    return render(request, 'blog.html', {'articles': articles, 'categories': categories})
-
 def category(request, category):
     category = get_object_or_404(BlogCategory, category_name=category)
     recent_posts = Article.objects.all().order_by('-article_date')[:10]
@@ -48,7 +43,7 @@ def blogs(request):
     categories = BlogCategory.objects.all()
     recent_posts = Article.objects.all().order_by('-article_date')[:10]
     category_slug = request.GET.get('category')
-    articles = Article.objects.all()
+    articles = Article.objects.all().order_by('-article_date')
 
     if category_slug:
         category = get_object_or_404(BlogCategory, slug=category_slug)
