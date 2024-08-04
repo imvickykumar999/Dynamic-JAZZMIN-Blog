@@ -33,14 +33,18 @@
           <div class="content">
             {{ article.description|safe }}
           </div><!-- End post content -->
+
+          <br><br>
           {% for detail in article.articledetails_set.all %}
           {% if detail.image %}
           <img src="{{ detail.image.url }}" class="img-fluid" alt="">
           {% endif %}
+
           <br><br>
           <h3>{{ detail.title }}</h3>
           <p>{{ detail.description|safe }}</p>
           {% endfor %}
+
           <div class="meta-bottom">
             <i class="bi bi-folder"></i>
             <ul class="cats">
