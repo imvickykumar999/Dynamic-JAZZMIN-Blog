@@ -1,3 +1,3 @@
 ># Dynamic Vicks Blog
->![image](https://github.com/user-attachments/assets/ca804fc7-68bc-4ae4-9c08-83bdb80d896b)
->![image](https://github.com/user-attachments/assets/c6e8f3be-09cb-4758-91ee-59d0ff1b53ca)
+>![image](https://github.com/user-attachments/assets/0cd7a8d2-232c-4672-ae65-ad0dce66e5d2)
+>![image](https://github.com/user-attachments/assets/b03183f0-f5ca-4944-b722-ee2c7c862bc1)
